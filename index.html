@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    //metadata about the page
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    // Links the html document to 3 external Stylesheets
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <title>2048</title>
+    <link rel="shortcut icon" href="css/favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img alt="Brand" src="css/Navbar.png">
+                <br>
+            </div>
+        </div>
+    </nav>
+
+    <div class=MainDiv>
+        <!--   Heading of the page    -->
+        <h1 class="Heading" style="font-size:80px;">2048</h1>
+
+        <div class="scoresContainer">
+
+            <div class="currentScore">
+                <p>Score</p>
+                <p id=currentSc>0</p>
+            </div>
+
+            <div class="bestScore">
+                <p>Best Score</p>
+                <p id=bestSc>0</p>
+            </div>
+
+        </div>
+
+        <div class="game">
+            <!-- Game canvas in the middle of the page -->
+            <canvas id="2048Canvas" class="MyCanvas" width="495" height="495"></canvas>
+            <button type="button" class="newGameButton" onclick="newGameRequest()">New Game</button>
+            <script src="JS/game.js"></script>
+        </div>
+
+    </div>
+
+    <footer class=CopyrightsFooter>
+        <h1 class="rightsText">
+            Copyright &#169; 2017 Momchil Galabov &nbsp;
+            <img class="MiddlesexImage" src="css/mdx.jpg" alt="MiddlesexLogo">
+        </h1>
+    </footer>
+</body>
+
+</html>
