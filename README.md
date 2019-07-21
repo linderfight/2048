@@ -8,4 +8,4 @@ A JavaScript remake of the original 2048 game developed by Gabriele Cirulli. The
 ## How to set up
 
 1. Open the index.html file which will load the game
-
+2. Use the arrow keys to move tiles
